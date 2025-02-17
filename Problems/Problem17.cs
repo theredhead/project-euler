@@ -14,7 +14,6 @@ public class Problem17 : Problem
     for (var i = 1; i <= 1000; i++)
     {
       var s = NumberToWords(i);
-      Console.WriteLine($"{i} => [{s}]");
       sum += s.Replace("-", "").Replace(" ", "").Length;
     }
     return sum;
